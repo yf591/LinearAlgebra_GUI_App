@@ -6,7 +6,7 @@
 ## 主な機能
 
 - 行列サイズの選択（2x2 ～ 10x10）
-- 以下の行列演算に対応:
+- 以下の行列演算に対応
   - 行列式
   - 逆行列
   - 対角化（固有値・固有ベクトル）
@@ -18,15 +18,41 @@
 
 ## インストール方法
 
-1. リポジトリのクローン:
+1. リポジトリのクローン
 ```bash
 git clone https://github.com/yf591/LinearAlgebra_GUI_App.git
 cd LinearAlgebra_GUI_App
 ```
 
-2. 必要な依存関係をインストールします。
+2. 仮想環境の構築とアクティベーション
+
+### Windows
+```bash
+# 仮想環境の作成
+python -m venv .venv
+
+# 仮想環境のアクティベーション
+.venv\Scripts\activate
+```
+
+### Mac/Linux
+```bash
+# 仮想環境の作成
+python3 -m venv .venv
+
+# 仮想環境のアクティベーション
+source .venv/bin/activate
+```
+
+3. 必要な依存関係をインストール
 ```bash
 pip install -r requirements.txt
+```
+
+4. アプリケーションの起動
+```bash
+# アプリを起動するには以下のコマンドを実行します
+python src/main.py
 ```
 
 ## 使用方法
